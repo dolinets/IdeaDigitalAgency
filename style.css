@@ -49,34 +49,35 @@ header{
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     text-decoration-style: dashed;
+    text-decoration-line: underline;
     color: #767676;
 }
 nav{
     background: #777777;
 }
-.menu-left{
+.menu-main{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto;
     color: #767676;
 }
-.menu-left a{
+.menu-main a{
     font-size: 30px;
     color: #ffffff;
     text-decoration: none;
     line-height: 75px;
 }
-.menu-left li{
+.menu-main li{
     list-style-type: none;
     color: #ffffff;
 }
-.menu-left li:before{
+.menu-main li:before{
     content: "|";
     padding: 23px;
     font-size: 23px;
 }
-.menu-left li:first-of-type:before{
+.menu-main li:first-of-type:before{
      content: none;  
 }
 .carousel-control-prev-icon{
