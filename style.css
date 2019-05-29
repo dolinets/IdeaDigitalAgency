@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "OpenSans";
 	src: url("font/opensanscondlight.woff2") format("woff2"),
-	url("font/opensanscondlight.woff") format("woff");
+		url("font/opensanscondlight.woff") format("woff");
 }
 body{
 	overflow-x: hidden;
