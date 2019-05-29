@@ -1,92 +1,265 @@
 @font-face {
-    font-family: "OpenSans";
-    src: url("font/opensanscondlight.woff2") format("woff2"),
-         url("font/opensanscondlight.woff") format("woff");
+	font-family: "OpenSans";
+	src: url("font/opensanscondlight.woff2") format("woff2"),
+	url("font/opensanscondlight.woff") format("woff");
 }
-body,header,nav{
-    width: 100%;
-    font-family: "PT Sans", sans-serif;
-    margin: 0;
+body{
+	overflow-x: hidden;
+}    
+body,header,.navbar-custom{
+	width: 100%;
+	font-family: "PT Sans", sans-serif;
+	margin: 0;
 }
 .content-width{
-    width: 980px;
-    padding-right: 10px;
-    padding-left: 10px;
+	max-width: 980px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
 }
 header{
-    background: #dcdcdc;
+	background: #dcdcdc;
 }
 .header-content{
-    display: flex;
-    height: 235px;
-    
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-
-    color: #767676;
+	height: 235px;
+	align-items: center;
+	justify-content: space-between;
+	color: #767676;
 }
 .left-content{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 600;
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 600;
 }
 .left-content img{
-    margin-right: 15px;    
+	margin-right: 15px;	
 }
 .left-content span{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 35px;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 35px;
 }
 .right-content{
-    font-family: "OpenSans", sans-serif;
-    font-size: 40px;
-    text-align: right;
+	font-family: "OpenSans", sans-serif;
+	font-size: 40px;
+	text-align: right;
 }
 .right-content a {
-    font-family: "PT Sans", sans-serif;
-    font-size: 24px;
-    text-decoration-style: dashed;
-    text-decoration-line: underline;
-    color: #767676;
+	font-family: "PT Sans", sans-serif;
+	font-size: 24px;
+	text-decoration-style: dashed;
+	text-decoration-line: underline;
+	color: #767676;
 }
-nav{
-    background: #777777;
+.modal-content{
+	padding-top: 30px;	
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+.modal-title {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+}
+.navbar-custom{
+	background: #777777;
 }
 .menu-main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    color: #767676;
+	justify-content: space-around;
+	margin: 0 auto;
+	color: #767676;
 }
 .menu-main a{
-    font-size: 30px;
-    color: #ffffff;
-    text-decoration: none;
-    line-height: 75px;
+	font-size: 30px;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 75px;
 }
 .menu-main li{
-    list-style-type: none;
-    color: #ffffff;
+	list-style-type: none;
+	color: #ffffff;
 }
 .menu-main li:before{
-    content: "|";
-    padding: 23px;
-    font-size: 23px;
+	content: "|";
+	padding: 23px;
+	font-size: 23px;
 }
 .menu-main li:first-of-type:before{
-     content: none;  
+	content: none;  
 }
 .carousel-control-prev-icon{
-    background-image: url("image/arrow-1.png");
-    width: 18px;
-    height: 35px;
+	background-image: url("image/arrow-1.png");
+	width: 18px;
+	height: 35px;
 }
 .carousel-control-next-icon{
-    background-image: url("image/arrow-2.png");
-    width: 18px;
-    height: 35px;
+	background-image: url("image/arrow-2.png");
+	width: 18px;
+	height: 35px;
+}
+.breadcrumb-custom{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb-item{
+	color: #767676;
+	font-size: 14px;
+	line-height: 30px;
+}
+.breadcrumb-item a{
+	text-decoration: underline;
+	color: #767676;
+}
+.main-content {
+	margin-top: 10px;
+}
+.nav-left-custom{
+	flex-direction: column;
+}
+.nav-left-custom a{
+	font-size: 18px;
+	color: #767676;
+}
+.nav-left-custom ul a{
+	font-size: 14px;
+}
+.nav-left-custom a:hover, 
+.nav-left-custom .active>a,
+.nav-left-custom a.active{
+	text-decoration: underline;
+}
+.nav-left-custom ul a:hover, 
+.nav-left-custom ul a.active{
+	color: #000000;
+}
+.nav-left-custom ul li{
+	list-style-type: disc;
+}
+.price-img{
+	width: 100px!important;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.price-excel{
+	text-align: center;
+	font-size: 30px;
+	color: #444444;
+}
+.price-download:hover{
+	color: #444444;
+	text-decoration: underline;
+}
+.card-custom{
+	background: #dcdcdc;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.card-img {
+	background: url(image/photo.jpg) no-repeat center;
+	background-size: cover;
+	height: 150px;
+	font-size: 18px;
+}
+.card-text{
+	margin-top: 20px;
+}
+.card-price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	font-size: 28px;
+	font-weight: 600;   
+}
+.card-basket{
+	background: url(image/basket.jpg) no-repeat center;
+	height: 25px;
+	width: 25px;
+}
+.pagination-custom{
+	margin-top: 25px;
+	margin-bottom: 65px;
+}
+.pagination-custom a{
+	border: none;
+	color: #767676;
+	font-size: 14px;
+}
+.pagination-custom .page-item.disabled .page-link{
+	font-size: 18px;
+	color: #444444;	
+}
+.pagination-custom .page-link:hover{
+	color: #444444;
+}
+.articles-custom{
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 14px;
+	color: #767676;
+	border-top: 1px solid #767676;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+footer{
+	background: #777777;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	color: #ffffff;
+	margin-left: 0;
+	margin-right: 0;
+}
+footer ul{
+	list-style-type: none;	
+}
+footer a{
+	color: #ffffff;
+	text-decoration: underline;
+}
+.developer{
+	display: flex;
+}
+.developer img{
+	height: 20px;
+	margin-top: 10px;
+    margin-right: 10px;
+}
+@media (max-width: 768px){
+	.nav-left-custom{
+		flex-direction: row;
+	}
+	.nav-left-custom a{
+		padding-right: 10px;
+	}
+}
+@media (max-width: 992px){
+	header{
+		display: flex;
+	}
+	.navbar-custom{
+		justify-content: flex-end;
+		width: max-content;
+	}
+	.content-width{
+		width: 100%;
+	}
+	.header-content{
+		height: auto;
+	}
+	.menu-main a{
+		font-size: 20px;
+		line-height: unset;
+	}
+	.menu-main li:before{
+		content: none;
+		padding: 10px;
+	}
 }
